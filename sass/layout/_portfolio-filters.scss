@@ -1,0 +1,36 @@
+/* Кнопки фильтра */
+
+.filter-btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  color: $main-text-color;
+  background-color: #f5f4fa;
+  padding: 6px 22px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: #ffffff;
+    background-color: $accent-color;
+  }
+}
+
+.filter-btn-list {
+  display: flex;
+  justify-content: center;
+  width: 1200px;
+  padding-top: 93px;
+  padding-bottom: 50px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.filter-btn-list-item:not(:last-child) {
+  margin-right: 8px;
+}

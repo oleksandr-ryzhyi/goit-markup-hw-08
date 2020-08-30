@@ -1,0 +1,62 @@
+/* Особенности */
+
+.features .container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.features-list {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 94px;
+}
+
+.features-list-item {
+  width: 270px;
+
+  &:before {
+    content: "";
+    display: block;
+    height: 120px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #f5f4fa;
+    border-radius: 4px;
+    margin-bottom: 30px;
+  }
+}
+
+.icon-antenna::before {
+  background-image: url(../images/main/antenna-icon.svg);
+}
+
+.icon-clock::before {
+  background-image: url(../images/main/clock-icon.svg);
+}
+
+.icon-notebook::before {
+  background-image: url(../images/main/notebook-icon.svg);
+}
+
+.icon-astronaut::before {
+  background-image: url(../images/main/astronaut-icon.svg);
+}
+
+.features-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: $main-text-color;
+  margin-bottom: 10px;
+}
+
+.features-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  color: $secondary-text-color;
+}
